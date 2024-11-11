@@ -1,7 +1,7 @@
 # Python Code QR Generator
 
 import qrcode
-from PIL import Image
+from PIL import Image 
 
 def generate_qr_code(data, file_path):
     qr = qrcode.QRCode(
@@ -30,3 +30,4 @@ if __name__ == "__main__":
     display_option = input("Do you want to display the QR code? (y/n): ").lower()
     if display_option == 'y':
         display_qr_code(output_file_path)
+        
